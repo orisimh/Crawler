@@ -47,5 +47,5 @@ app.include_router(websites.router, prefix=f"/api/{settings.v}", tags=["websites
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("app.main:app", host=settings.host, port=settings.port) # , reload=True
+    uvicorn.run("app.main:app", host=settings.host, port=settings.port )    # , reload=True
 

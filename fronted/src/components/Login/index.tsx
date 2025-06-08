@@ -3,6 +3,7 @@ import { setUsername, setPassword, setWebsite, loginUser } from "../../redux/aut
 import { RootState } from "../../redux/store";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Loader from "../Shared/Loader/";
 
 export default function Login() {
 
@@ -71,10 +72,10 @@ export default function Login() {
 
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
+          className="w-full h-[40px] bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
           disabled={loading}
         >
-          {loading ? "Logging in..." : "Login"}
+          {loading ? <Loader /> : "Login"}
         </button>
       </form>
     </div>
