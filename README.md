@@ -10,7 +10,6 @@ This is the backend component of the Site Crawler project. It exposes a FastAPI-
 | **FastAPI**      | Web API framework                         |
 | **Uvicorn**      | ASGI server for running FastAPI           |
 | **playwright**   | Headless browser automation               |
-|------------------|-------------------------------------------|
 
 ---
 
