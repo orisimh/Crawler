@@ -35,7 +35,7 @@ async def check_token_middleware(request: Request, call_next):
 
     token = request.headers.get("token")
     route_endpoint = extract_final_path(request)
-    if  (not token or not decode_access_token(token) ): # route_endpoint not in ["login"] and
+    if  route_endpoint not in ["login"] and (not token or not decode_access_token(token) ): #
         return JSONResponse(status_code=401, content={"detail":"Unauthorized or token expired"})
 
     return await call_next(request)
