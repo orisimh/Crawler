@@ -24,6 +24,7 @@ class CrawlerService:
         self.settings = get_settings()
 
     async def login_and_fetch_deals(self, website: str, username: str, password: str) -> Dict:
+
         if website not in self.settings.websites:
             return CrawlerResponse(
                 success = False,
