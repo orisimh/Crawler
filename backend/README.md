@@ -17,6 +17,7 @@ This is the backend component of the Site Crawler project. It exposes a FastAPI-
 Authenticated endpoints require a token header.
 A middleware verifies token validity and returns 401 Unauthorized if invalid or missing.
 
+---
 
 ### 📦 Installation
 #### 1. Clone the repository (if not already cloned)
@@ -51,6 +52,8 @@ Or
 ```bash
 uvicorn app.main:app --reload
 ```
+
+---
 
 ### Runs locally at:
 
