@@ -43,18 +43,6 @@ playwright install
 ```
 ---
 
-### 🚀 Run the API
-
-```bash
-python main.py
-```
-Or 
-```bash
-uvicorn app.main:app --reload
-```
-
----
-
 ### Runs locally at:
 
 ```bash
