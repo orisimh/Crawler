@@ -22,7 +22,7 @@ A middleware verifies token validity and returns 401 Unauthorized if invalid or 
 #### 1. Clone the repository (if not already cloned)
 ```bash
 git clone https://github.com/your-username/my-fullstack-project.git
-cd my-fullstack-project/backend
+cd Crawler/backend
 ```
 
 #### 2. Create virtual environment
@@ -40,24 +40,27 @@ pip install -r requirements.txt
 ```bash
 playwright install
 ```
+---
 
-🚀 Run the API
+### 🚀 Run the API
+
 ```bash
-uvicorn app.main:app --reload
+python main.py
 ```
 Or 
 ```bash
 uvicorn app.main:app --reload
 ```
 
-Runs locally at:
+### Runs locally at:
 
 ```bash
 🔗 http://localhost:8000
 ```
 
 Swagger Docs available at:
+```bash
 📘 http://localhost:8000/docs
-
+```
 
 
