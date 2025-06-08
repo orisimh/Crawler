@@ -5,7 +5,7 @@ from functools import lru_cache
 from dotenv import load_dotenv
 
 # ✅ Load the .env file explicitly
-load_dotenv(".env")
+# load_dotenv("/backend/.env")
 
 class Settings(BaseSettings):
     """Application settings"""
@@ -37,7 +37,7 @@ class Settings(BaseSettings):
 
 
     class Config:
-        env_file = "../../.env"
+        env_file = ".env"
         case_sensitive = False
 
 
