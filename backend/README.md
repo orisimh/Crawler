@@ -29,7 +29,7 @@ cd Crawler/backend
 #### 2. Create virtual environment
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+.venv\Scripts\activate   # On Linux: source .venv/bin/activate
 ```
 
 #### 3. Install dependencies
