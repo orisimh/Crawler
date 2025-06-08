@@ -14,30 +14,30 @@ This is the backend component of the Site Crawler project. It exposes a FastAPI-
 
 ---
 
-#### 🔐 Token-Based Auth
+### 🔐 Token-Based Auth
 Authenticated endpoints require a token header.
 A middleware verifies token validity and returns 401 Unauthorized if invalid or missing.
 
 
-## 📦 Installation
-### 1. Clone the repository (if not already cloned)
+### 📦 Installation
+#### 1. Clone the repository (if not already cloned)
 ```bash
 git clone https://github.com/your-username/my-fullstack-project.git
 cd my-fullstack-project/backend
 ```
 
-### 2. Create virtual environment
+#### 2. Create virtual environment
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```
 
-### 3. Install dependencies
+#### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Install and configure Playwright (if used)
+#### 4. Install and configure Playwright (if used)
 ```bash
 playwright install
 ```
