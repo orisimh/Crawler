@@ -43,15 +43,20 @@ playwright install
 ```
 ---
 
-### Runs locally at:
-
+#### 🚀 Run the API
 ```bash
-🔗 http://localhost:8000
+uvicorn app.main:app --reload
 ```
 
-Swagger Docs available at:
+##### 🔗 Runs locally at:
+
 ```bash
-📘 http://localhost:8000/docs
+http://localhost:8000
+```
+
+##### 📘 Swagger Docs available at:
+```bash
+http://localhost:8000/docs
 ```
 
 
